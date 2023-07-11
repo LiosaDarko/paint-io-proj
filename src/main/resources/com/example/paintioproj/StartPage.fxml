@@ -8,14 +8,14 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paintioproj.StartPage">
+<AnchorPane fx:id="gameScene" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paintioproj.SceneController">
    <children>
-      <Button layoutX="260.0" layoutY="540.0" mnemonicParsing="false" text="START" textFill="#4440b1">
+      <Button layoutX="260.0" layoutY="540.0" mnemonicParsing="false" onAction="#switchToGame" text="START" textFill="#4440b1">
          <font>
             <Font name="Gill Sans Ultra Bold Condensed" size="32.0" />
          </font>
       </Button>
-      <ColorPicker editable="true" layoutX="254.0" layoutY="178.0" prefHeight="42.0" prefWidth="142.0">
+      <ColorPicker fx:id="colorPicker" editable="true" layoutX="254.0" layoutY="178.0" prefHeight="42.0" prefWidth="142.0">
          <value>
             <Color green="0.501960813999176" />
          </value>
@@ -30,6 +30,6 @@
             <Font name="Gill Sans Ultra Bold Condensed" size="48.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="200.0" layoutX="226.0" layoutY="276.0" opacity="0.71" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="200.0" />
+      <Rectangle fx:id="playerColor" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="200.0" layoutX="226.0" layoutY="276.0" opacity="0.71" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="200.0" />
    </children>
 </AnchorPane>
