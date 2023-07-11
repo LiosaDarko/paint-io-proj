@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paintioproj.StartPage">
+   <children>
+      <Button layoutX="260.0" layoutY="540.0" mnemonicParsing="false" text="START" textFill="#4440b1">
+         <font>
+            <Font name="Gill Sans Ultra Bold Condensed" size="32.0" />
+         </font>
+      </Button>
+      <ColorPicker editable="true" layoutX="254.0" layoutY="178.0" prefHeight="42.0" prefWidth="142.0">
+         <value>
+            <Color green="0.501960813999176" />
+         </value>
+      </ColorPicker>
+      <Label layoutX="179.0" layoutY="141.0" text="Pick a color for your player" textFill="#4440b1">
+         <font>
+            <Font name="Gill Sans Ultra Bold Condensed" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="32.0" text="Welcome to Paint.io" textFill="#00ae7d">
+         <font>
+            <Font name="Gill Sans Ultra Bold Condensed" size="48.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="200.0" layoutX="226.0" layoutY="276.0" opacity="0.71" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="200.0" />
+   </children>
+</AnchorPane>
